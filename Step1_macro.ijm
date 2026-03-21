@@ -2,7 +2,7 @@
 
 // Choose input and output folder  
 #@ File(label = "Input Folder", style = "directory") input 
-#@ File(label = "Output Image Folder", style = "directory") output
+#@ File(label = "ROIs Folder", style = "directory") output
 #@ File(label = "Feret Folder", style = "directory") feret
 
 processFolder(input, output, feret); 
