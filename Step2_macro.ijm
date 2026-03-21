@@ -1,7 +1,7 @@
 // STEP 2 – Analyse puncta in the user-drawn selection, and export feret for density analysis
 
 //Choose input and output folder  
-#@ File(label = "Crops Folder", style = "directory") input 
+#@ File(label = "ROIs Folder", style = "directory") input 
 #@ File(label = "Output Results Folder", style = "directory") output
  
 processFolder(input, output); 
@@ -62,7 +62,7 @@ function processFile(input, output, fileName) {
 
 	setTool("zoom");
     waitForUser("Adjust brightness; zoom in puncta for comDET analysis, then click OK."); 
-  // Run ComDet analysis 
+  // Run ComDet analysis; in Summary table choose append(not reset)
     run("Detect Particles"); 
    
     a = getInfo("image.filename");
