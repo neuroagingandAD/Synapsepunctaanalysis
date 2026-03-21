@@ -1,4 +1,4 @@
-// STEP 1 – Create crops from raw .czi images and save them as .tif 
+// STEP 1 – Create ROIs from raw .czi images and save them as .tif 
 
 // Choose input and output folder  
 #@ File(label = "Input Folder", style = "directory") input 
